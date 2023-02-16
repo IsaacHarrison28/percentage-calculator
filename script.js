@@ -33,7 +33,7 @@ calculateButton.addEventListener('click', () => {
     //then find the percentage as a whole number
     let percentage = Math.round( quotient * 100 )
 
-    //clear the input field after calculating
+    //clear the input field after calculating 
     obtainedValue.value = null
     maximumValue.value = null
 
