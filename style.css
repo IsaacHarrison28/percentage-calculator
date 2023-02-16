@@ -11,6 +11,10 @@ body{
     background: rgba(153, 133, 133, 0.3);
 }
 
+.main{
+    width: 100%;
+}
+
 .head{
     background: black;
     color: white;
@@ -29,7 +33,6 @@ body{
     text-align: center;
     margin-block: 0.8rem;
     color: white;
-  
 }
 
 .head h4{
@@ -111,4 +114,102 @@ input{
     background: aquamarine;
     color: rgba(0, 0, 0, 0.5);
     font-weight: normal;
+}
+
+.result{
+    margin: 2rem 0 1.2rem 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.result.active{
+    display: flex;
+}
+
+.result h1{
+    font-size: 4rem;
+    color: white;
+}
+
+.result h4{
+    color: white;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.result button{
+    width: 50%;
+    max-width: 300px;
+    padding: 0.7em 1em;
+    outline: none;
+    font-size: 0.95rem;
+    border-radius: 0.5em;
+    border: none;
+    background: aquamarine;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: normal;
+    margin-top: 1rem;
+}
+
+.error{
+    font-size: 0.8rem;
+    color: red;
+    text-align: center;
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+}
+
+@media(width > 60em){
+    .head{
+        padding: 1rem;
+    }
+
+    .head h1{
+        font-size: 2.5rem;
+    }
+
+    .head h4{
+        font-size: 1.2rem;
+    }
+
+    label{
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    input{
+        width: 95%;
+        padding: 1em 0.8em;
+        font-size: 1rem;
+    }
+
+    .calculate button{
+        padding: 1em 1em;
+        outline: none;
+        font-size: 1.1rem;
+    }
+
+    .error{
+        font-size: 1rem;
+        margin-top: 0.8rem;
+    }
+
+    .result h4{
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .result h1{
+        font-size: 7rem;
+    }
+
+    .result button{
+        font-size: 1.1rem;
+    }
+
+    .container{
+        top: 70%;
+    }
 }
