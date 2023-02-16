@@ -88,8 +88,8 @@ input{
     outline: none;
     border-radius: 0.5em;
     border: none;
-    background: rgba(153, 133, 133, 0.3);
-    color: white;
+    background: whitesmoke;
+    color: black;
 }
 
 .calculate{
