@@ -28,7 +28,7 @@ body{
     font-size: clamp(1rem, 9vw, 1.7rem);
     text-align: center;
     margin-block: 0.8rem;
-    color: rgba(0, 255, 255, 0.7);
+    color: white;
   
 }
 
