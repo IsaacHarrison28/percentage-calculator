@@ -45,9 +45,9 @@ body{
     width: 85%;
     max-width: 600px;
     margin: auto;
-    background: rgba(54, 52, 52, 0.7);
+    background: black;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1rem;
