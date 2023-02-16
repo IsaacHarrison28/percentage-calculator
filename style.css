@@ -15,7 +15,7 @@ body{
     background: black;
     color: white;
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 89%;
@@ -47,7 +47,7 @@ body{
     margin: auto;
     background: black;
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1rem;
