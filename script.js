@@ -7,6 +7,13 @@ const okBtn = document.getElementById('ok-btn')
 const displayPercent = document.getElementById('percent')
 const errorMessage = document.querySelectorAll('.error')[0]
 
+//use the button to remove the result from display
+okBtn.addEventListener('click', () => {
+    resultDisplay.classList.remove('active')
+    container.style.top = '60%'
+    calculateButton.style.display = 'block'
+})
+
 //clear message error if displaying
 obtainedValue.addEventListener('click', () => {
     if(errorMessage.innerText = "please provide all information"){
@@ -34,8 +41,8 @@ calculateButton.addEventListener('click', () => {
     let percentage = Math.round( quotient * 100 )
 
     //clear the input field after calculating 
-    obtainedValue.value = null
-    maximumValue.value = null
+    obtainedValue.value = ""
+    maximumValue.value = ""
 
     //display the percentage to user
     container.style.top = '80%'
@@ -46,8 +53,3 @@ calculateButton.addEventListener('click', () => {
     calculateButton.style.display = 'none'
 })
 
-//use the button to remove the result from display
-okBtn.addEventListener('click', () => {
-    resultDisplay.classList.remove('active')
-    container.style.top = '60%'
-})
