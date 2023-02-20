@@ -48,7 +48,7 @@ body{
     max-width: 600px;
     margin: auto;
     background: black;
-    position: relative /*absolute*/;
+    position: relative;
     margin-top: 1.5rem;
     padding: 1rem;
     border-radius: 0.5em;
@@ -159,14 +159,15 @@ input{
 }
 
 .footer{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     background: black;
     flex-direction: column;
     color: white;
-    position: relative;
     margin-top: 2rem;
+    bottom: -2rem;
 }
 
 .icons{

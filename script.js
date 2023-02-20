@@ -10,8 +10,8 @@ const errorMessage = document.querySelectorAll('.error')[0]
 //use the button to remove the result from display
 okBtn.addEventListener('click', () => {
     resultDisplay.classList.remove('active')
-    container.style.top = '60%'
-    calculateButton.style.display = 'block'
+    obtainedValue.value = ""
+    maximumValue.value = ""
 })
 
 //clear message error if displaying
@@ -27,29 +27,29 @@ maximumValue.addEventListener('click', () => {
         errorMessage.innerText = ""
     } 
     return
-})
+})   
 
 calculateButton.addEventListener('click', () => {
-    //receive values of the user provided in the input fields
     let initial = obtainedValue.value
     let original = maximumValue.value
 
-    //calculate quotient of the obtained value against the maximum value 
-    initial === "" || original === "" ? errorMessage.innerText = "please provide all information" : quotient = initial/original
-    
-    //then find the percentage as a whole number
+    if (initial == "" | original == ""){
+
+        //check if input fields are empty and notify the user
+        errorMessage.innerText = "please provide all information"
+        return
+        
+    }else{
+        quotient = initial/original
+    }
+
+    //calculate the percentage as a whole number
     let percentage = Math.round( quotient * 100 )
 
-    //clear the input field after calculating 
-    obtainedValue.value = ""
-    maximumValue.value = ""
-
     //display the percentage to user
-    container.style.top = '80%'
     resultDisplay.classList.add('active')
     displayPercent.innerText = `${percentage}%`
-
-    //remove the calculate button
-    calculateButton.style.display = 'none'
+   
 })
+
 
